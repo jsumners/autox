@@ -1,9 +1,8 @@
 
-C := clang
 SRC := autox.c
 PROGRAM := autox
 
 all: autox.c
-	$(C) -o $(PROGRAM) -lpam -lpam_misc $(SRC)
+	$(CC) $(CFLAGS) -o $(PROGRAM) -lpam -lpam_misc $(LDFLAGS) $(SRC)
 debug: autox.c
-	$(C) -o $(PROGRAM) -lpam -lpam_misc -g $(SRC)
+	$(CC) $(CFLAGS) -o $(PROGRAM) -lpam -lpam_misc -g $(LDFLAGS) $(SRC)
