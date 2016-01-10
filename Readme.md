@@ -44,7 +44,7 @@ exec /usr/local/bin/autox $USER 2>/tmp/autox.log
 ## Runit Script
 
 ```bash
-!/bin/sh
+#!/bin/sh
 USER=username
 
 exec 2>&1
